@@ -9,6 +9,9 @@ These scripts requires Node.js
 2. Copy `settings-template.json` to `settings.json` and fill in the required information
 3. Navigate to `/node/scripts/` and run `node [script]` where `[script]` is the name of a file, ex. `node bazaarWatcher.js`
 
+You can also run it in a docker container (example using bazaar watcher):
+`docker run -it --rm --name torn-bazaar-watcher -v "$PWD":/usr/src/app -w /usr/src/app node:8 node src/scripts/bazaarWatcher.js`
+
 ## Scripts
 
 - [Bazaar Watcher](/src/scripts/bazaarWatcher.js) - Monitors active bazaars, and notifies if a configured item is listed for less than a configured threshold.  

@@ -2,68 +2,9 @@ import axios from 'axios';
 import { EmbedBuilder, WebhookClient } from 'discord.js';
 import settings from '../../settings.json' assert { type: "json" };
 import sleep from '../helpers/sleep.js';
+import items from '../config/items.js';
 
 const webhookClient = new WebhookClient({ url: settings.bazaar_watcher_discord_webhook });
-
-// List of item ID in Torn, and the cost threshold. Any bazaar listing for that item under the given threshold will be reported.
-const items = {
-    "367": {
-        name: "Feathery+Hotel+Coupon",
-        enabled: true,
-        threshold: 0.95
-    },
-    "206": {
-        name: "Xanax",
-        enabled: true,
-        threshold: 0.95
-    },
-    "269": {
-        name: "Monkey+Plushie",
-        enabled: true,
-        threshold: 0.95
-    },
-    "271": {
-        name: "Ceibo+Flower",
-        enabled: true,
-        threshold: 0.95
-    },
-    "370": {
-        name: "Drug+Pack",
-        enabled: true,
-        threshold: 0.95
-    },
-    "817": {
-        name: "Six-Pack+Of+Alcohol",
-        enabled: true,
-        threshold: 0.95
-    },
-    "366": {
-        name: "Erotic+DVD",
-        enabled: true,
-        threshold: 0.95
-    },
-    "530": {
-        name: "Can+Of+Munster",
-        enabled: true,
-        threshold: 0.95
-    },
-    "553": {
-        name: "Can+Of+Santa+Shooters",
-        enabled: true,
-        threshold: 0.95
-    },
-    "532": {
-        name: "Can+Of+Red+Cow",
-        enabled: true,
-        threshold: 0.95
-    },
-    "554": {
-        name: "Can+Of+Rockstar+Rudolph",
-        enabled: true,
-        threshold: 0.95
-    },
-
-};
 
 /**
  * Torn Script to ping every 10 seconds for bazaars with items listed at a cost lower than the threshold.

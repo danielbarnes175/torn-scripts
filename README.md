@@ -1,6 +1,6 @@
 # Torn Scripts
 
-Various scripts I use for [Torn City](https://www.torn.com/1605235), an online text based MMO. Note not all scripts are maintained equally, and some may become out of date due to various API changes.
+Various scripts I use for [Torn City](https://www.torn.com/1605235), an online text based MMO. Note not all scripts are maintained equally, and some may become out of date due to various API changes. Also of note is there are many rate limits in place in the code using a helper sleep function. These limits are what work for my own uses to avoid Torn rate limiting, and may be different for you.
 
 ## Setup
 These scripts requires Node.js

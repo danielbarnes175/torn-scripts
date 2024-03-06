@@ -36,6 +36,16 @@ const items = {
         enabled: true,
         threshold: 0.95
     },
+    "555": {
+        name: "Can+Of+X-Mass",
+        enabled: true,
+        threshold: 0.95
+    },
+    "533": {
+        name: "Can+Of+Taurine-Elite",
+        enabled: true,
+        threshold: 0.95
+    },
     
     // Plushies
     "258": {
@@ -66,7 +76,7 @@ const items = {
     "261": {
         name: "Wolverine+Plushie",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.9
     },
     "266": {
         name: "Nessie+Plushie",
@@ -86,17 +96,17 @@ const items = {
     "215": {
         name: "Kitten+Plushie",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.8
     },
     "187": {
         name: "Teddy+Bear+Plushie",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.8
     },
     "186": {
         name: "Sheep+Plushie",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.8
     },
     "618": {
         name: "Stingray+Plushie",
@@ -108,7 +118,7 @@ const items = {
     "260": {
         name: "Dahlia",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.85
     },
     "264": {
         name: "Orchid",
@@ -138,17 +148,17 @@ const items = {
     "272": {
         name: "Edelweiss",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.8
     },
     "263": {
         name: "Crocus",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.9
     },
     "267": {
         name: "Heather",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.9
     },
     "385": {
         name: "Tribulus+Omanense",
@@ -158,7 +168,7 @@ const items = {
     "617": {
         name: "Banana+Orchid",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.9
     },
 
     // Drugs
@@ -173,6 +183,30 @@ const items = {
         threshold: 0.95
     },
     
+    // Midieval Coin Set
+    "450": {
+        name: "Leopard+Coin",
+        enabled: true,
+        threshold: 0.9
+    },
+    "451": {
+        name: "Florin+Coin",
+        enabled: true,
+        threshold: 0.9
+    },
+    "452": {
+        name: "Gold+Noble+Coin",
+        enabled: true,
+        threshold: 0.9
+    },
+
+    // Vairocana Buddha Sculpture
+    "454": {
+        name: "Vairocana+Buddha+Sculpture",
+        enabled: true,
+        threshold: 0.95
+    },
+
     // Miscallaneous
     "364": {
         name: "Box+Of+Grenades",
@@ -182,7 +216,7 @@ const items = {
     "226": {
         name: "Smoke+Grenade",
         enabled: true,
-        threshold: 0.95
+        threshold: 0.8
     },
 
 };

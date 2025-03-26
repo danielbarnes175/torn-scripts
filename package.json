@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "dayjs": "^1.11.13",
     "discord.js": "^14.14.1",
+    "pdfkit": "^0.16.0",
     "text-table": "^0.2.0"
   }
 }

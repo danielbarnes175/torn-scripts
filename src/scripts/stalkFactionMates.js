@@ -53,6 +53,11 @@ const chartDir = path.join(__dirname, '../../output/charts');
 const reportDir = path.join(__dirname, '../../output/reports');
 const snapshotDir = path.join(__dirname, '../../output/snapshots');
 
+// Create directories if they don't exist
+if (!fs.existsSync(chartDir)) fs.mkdirSync(chartDir, { recursive: true });
+if (!fs.existsSync(reportDir)) fs.mkdirSync(reportDir, { recursive: true });
+if (!fs.existsSync(snapshotDir)) fs.mkdirSync(snapshotDir, { recursive: true });
+
 const API_KEY = settings.api_key;
 const STAT_KEYS = [
   'moneymugged', 'respectforfaction', 'alcoholused', 'energydrinkused',
@@ -60,7 +65,10 @@ const STAT_KEYS = [
 ];
 
 (async () => {
-  const startOfMonth = dayjs().startOf('month').unix();
+  const today = dayjs();
+  const startOfMonth = (today.date() === 1 ? today.subtract(1, 'month') : today).startOf('month').unix();
+  console.log(`📅 Start of month: ${dayjs.unix(startOfMonth).format('YYYY-MM-DD')}`);
+
   let members = [];
   let results = [];
   let factionName = '';
